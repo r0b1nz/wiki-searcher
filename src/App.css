@@ -1,33 +1,50 @@
 .App {
-  text-align: center;
+  text-align: left ;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
+.MotherOfAllSearchViews {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: left;
+  justify-content: left;
+  font-size: calc(3px + 2vmin);
   color: white;
+  padding: 1vmin;
 }
 
-.App-link {
-  color: #61dafb;
+.Header {
+  background-color: #fdba28;
+  padding: 1vmin;
+
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Footer {
+  position: -webkit-sticky;
+  position: sticky;
+}
+
+.SearchBar {
+  padding-bottom: 0vmin;
+}
+
+p {
+  border: 1px solid powderblue;
+  padding: 30px;
+}
+
+input {
+  font-size: calc(10px + 2vmin);
+  animation-name: blinkBox;
+  animation-duration: 0.3s;
+  animation-iteration-count: 2;
+}
+
+@keyframes blinkBox {
+  0%   {background-color:rgb(255, 255, 255); left:0px; top:0px;}
+  100% {background-color:rgb(19, 3, 3); left:0px; top:0px;}
 }
